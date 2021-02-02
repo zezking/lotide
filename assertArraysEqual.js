@@ -1,4 +1,5 @@
 const assertEqual = function (actual, expected) {
+  console.log(actual, expected)
   if (actual !== expected) {
     return false;
   } else {
@@ -9,6 +10,9 @@ const assertEqual = function (actual, expected) {
 // TEST CODE
 
 const eqArrays = function (array1, array2) {
+  console.log(array1)
+  console.log(array2)
+  input = [];
   if (array1.length !== array2.length) {
     return false;
   } else {
@@ -27,5 +31,3 @@ console.log(eqArrays([1, 2, 3], [3, 2, 1])) // => false
 
 console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])) // => true
 console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])) // => false
-
-console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true));
