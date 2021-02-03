@@ -35,10 +35,6 @@ const middle = function (arr) {
   }
 }
 
-
-
-
-
 middle([1])// => []
 middle([1, 2])// => []
 middle([1, 2, 3])// => [2]

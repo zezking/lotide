@@ -1,15 +1,4 @@
 
-const without = function (source, itemsToRemove) {
-  let newArray = [...source]
-  for (i = 0; i < source.length; i++) {
-    for (j = 0; j < itemsToRemove.length; j++) {
-      if (source[i] === itemsToRemove[j]) {
-        newArray.splice(i, 1)
-      }
-    }
-  }
-  return newArray;
-}
 
 
 
