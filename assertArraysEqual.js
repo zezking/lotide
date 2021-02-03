@@ -15,10 +15,10 @@ const assertArraysEqual = function (array1, array2) {
   }
   for (let i = array1.length - 1; i > -1; i--) {
     if (!assertEqual(array1[i], array2[i])) {
-      console.log("Assertion Passed: First Array ", array1, "=== Second Array ", array2)
+      console.log("Assertion Failed: First Array ", array1, "=== Second Array ", array2)
     }
   }
-  console.log("Assertion Failed: First Array ", array1, "!== Second Array ", array2)
+  console.log("Assertion Passed: First Array ", array1, "!== Second Array ", array2)
 }
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]) // => true
