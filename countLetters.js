@@ -31,4 +31,11 @@ const countLetters = function (str) {
 }
 
 const testStr = "lighthouse in the house";
-console.log(countLetters(testStr))
+const testStr2 = "ddddfffjjooooo"
+
+result1 = countLetters(testStr2);
+
+assertEqual(result1['d'], 4)
+assertEqual(result1['f'], 3)
+assertEqual(result1['j'], 2)
+assertEqual(result1['o'], 5)
