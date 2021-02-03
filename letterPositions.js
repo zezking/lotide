@@ -11,7 +11,6 @@ const assertArraysEqual = function (array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   }
-
   for (let i = array1.length - 1; i > -1; i--) {
     if (!assertEqual(array1[i], array2[i])) {
       console.log("Assertion Failed: First Array ", array1, "=== Second Array ", array2)
