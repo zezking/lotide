@@ -50,7 +50,7 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
 assertEqual(findKeyByValue(testObj, 2), 'b');
-assertEqual(findKeyByValue(testObj, 3), 'b');
+assertEqual(findKeyByValue(testObj, 3), 'c');
 assertEqual(findKeyByValue(testObj, 4), 'b');
 assertEqual(findKeyByValue(testObj, 5), 'd');
 assertEqual(findKeyByValue(testObj, 7), undefined);
