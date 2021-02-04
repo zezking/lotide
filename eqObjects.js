@@ -1,8 +1,3 @@
-const failed = "Assertion Failed: ";
-const passed = "Assertion Passed: ";
-const notEqual = " !== ";
-const equal = " === "
-
 const assertEqual = function (actual, expected) {
   if (actual !== expected) {
     return false;
@@ -39,6 +34,7 @@ const eqObjects = function (object1, object2) {
   }
 
   for (i of keys1) {
+    //check array if array is right
     if (Array.isArray(object1[i]) || Array.isArray(object2[i])) {
       if (eqArrays(object1[i], object2[i])) {
         return true;
@@ -62,8 +58,8 @@ console.log(eqObjects(ab, ba)); // => true
 const abc = { a: "1", b: "2", c: "3" };
 console.log(eqObjects(ab, abc)); // => false
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
+const cd = { d: "1", c: ["2", 3] };
+const dc = { c: ["2", 3], b: [2, 3, 4, '5'], d: [1, 2] };
 console.log(eqObjects(cd, dc)); // => true
 
 const cd2 = { c: "1", d: ["2", 3, 4] };

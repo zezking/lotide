@@ -41,14 +41,12 @@ const eqObjects = function (object1, object2) {
       }
       return false;
     }
-
     if (object1[i] !== object2[i]) {
       return false;
     }
   }
-  return true; "✅✅✅"
+  return true;
 }
-
 
 const assertObjectsEqual = function (actual, expected) {
 
@@ -63,8 +61,9 @@ const assertObjectsEqual = function (actual, expected) {
 
 testObj1 = {
   a: 1,
-  b: 2,
-  c: 3
+  b: 3,
+  d: 4,
+  c: 2
 }
 
 testObj2 = {
@@ -77,6 +76,7 @@ testObj3 = {
   a: 1,
   b: 3,
   c: 2,
+  d: 4
 }
 
 assertObjectsEqual(testObj1, testObj3);
