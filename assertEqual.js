@@ -1,16 +1,10 @@
 const assertEqual = function (actual, expected) {
-  // if (actual !== expected) {
-  //   console.log(`🛑🛑🛑assertion Failed: ${actual} !== ${expected}`);
-  // } else {
-  //   console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
-  // }
-
-  let ErrorMsg =
+  let errorMsg =
     actual !== expected
       ? `🛑🛑🛑assertion Failed: ${actual} !== ${expected}`
       : `✅✅✅Assertion Passed: ${actual} === ${expected}`;
 
-  console.log(ErrorMsg);
+  console.log(errorMsg);
 };
 
 // TEST CODE

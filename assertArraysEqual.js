@@ -22,15 +22,15 @@ const assertArraysEqual = function (array1, array2) {
       );
       return false;
     }
-
-    console.log(
-      "✅✅✅Assertion Passed: First Array ",
-      array1,
-      "!== Second Array ",
-      array2
-    );
-    return true;
   }
+
+  console.log(
+    "✅✅✅Assertion Passed: First Array ",
+    array1,
+    "!== Second Array ",
+    array2
+  );
+  return true;
 };
 
 assertArraysEqual([1, 2, 3], [1, 2, 3]); // => true
