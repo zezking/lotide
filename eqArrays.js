@@ -1,14 +1,11 @@
 const assertEqual = function (actual, expected) {
-  if (actual !== expected) {
-    return false;
-  } else {
-    return true;
-  }
+  return actual === expected ? true : false;
 };
 
 // TEST CODE
 
 const eqArrays = function (array1, array2) {
+  let result = true;
   if (array1.length !== array2.length) {
     return false;
   }
@@ -18,13 +15,13 @@ const eqArrays = function (array1, array2) {
       return false;
     }
   }
-  return true;
-}
+  return result;
+};
 
-console.log(eqArrays([1, 2, 3], [1, 2, 3])) // => true
-console.log(eqArrays([1, 2, 3], [3, 2, 1])) // => false
+console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true
+console.log(eqArrays([1, 2, 3], [3, 2, 1])); // => false
 
-console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])) // => true
-console.log(eqArrays(["1", 2, 3], ["1", "2", 3])) // => false
+console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => true
+console.log(eqArrays(["1", 2, 3], ["1", "2", 3])); // => false
 
 console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true));
