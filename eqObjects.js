@@ -32,22 +32,18 @@ const eqObjects = function (object1, object2) {
   for (i of keys1) {
     //check array if array is right
     if (Array.isArray(object1[i]) && Array.isArray(object2[i])) {
-      if (eqArrays(object1[i], object2[i])) {
-        return true;
+      if (!eqArrays(object1[i], object2[i])) {
+        return false;
       }
-      return false;
-    }
-
-    if (object1[i] !== object2[i]) {
+    } else if (object1[i] !== object2[i]) {
       return false;
     }
   }
-  1;
   return true;
 };
 
 const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
+const ba = { b: "2", a: 1 };
 console.log(eqObjects(ab, ba)); // => true
 
 const abc = { a: "1", b: "2", c: "3" };
