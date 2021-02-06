@@ -2,8 +2,6 @@ const assertEqual = function (actual, expected) {
   return actual === expected ? true : false;
 };
 
-// TEST CODE
-
 const eqArrays = function (array1, array2) {
   let result = true;
   if (array1.length !== array2.length) {
