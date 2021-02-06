@@ -3,7 +3,6 @@ const assertEqual = function (actual, expected) {
 };
 
 const eqArrays = function (array1, array2) {
-  let result = true;
   if (array1.length !== array2.length) {
     return false;
   }
@@ -13,7 +12,7 @@ const eqArrays = function (array1, array2) {
       return false;
     }
   }
-  return result;
+  return true;
 };
 
 console.log(eqArrays([1, 2, 3], [1, 2, 3])); // => true
