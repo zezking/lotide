@@ -42,6 +42,7 @@ const eqObjects = function (object1, object2) {
       return false;
     }
   }
+  1;
   return true;
 };
 
