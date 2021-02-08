@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@zezking/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is mini lodash library for LighthouseLabs Bootcamp",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -20,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/zezking/lotide.git"
   },
-  "author": "",
+  "author": "Enze Zhao",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/zezking/lotide/issues"
