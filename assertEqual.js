@@ -4,8 +4,7 @@ const assertEqual = function (actual, expected) {
       ? `🛑🛑🛑assertion Failed: ${actual} !== ${expected}`
       : `✅✅✅Assertion Passed: ${actual} === ${expected}`;
 
-  console.log(errorMsg);
+  return errorMsg;
 };
 
-// TEST CODE
 module.exports = assertEqual;
