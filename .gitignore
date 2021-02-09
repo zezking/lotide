@@ -1,3 +1,4 @@
 node_modules/
 assertArraysEqual.js
 assertEqual.js
+assertObjectsEqual.js
