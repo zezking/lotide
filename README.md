@@ -29,3 +29,9 @@ The following functions are currently implemented:
 - `head(...)`: Return the first index of an array
 - `tail(...)`: Return every index but the first index of an array
 - `middle(...)`: Return the middle number of an array of numbers
+- `flatten(...)`: Flatten nested array and Return a single array of all the values
+- `eqArray(...)`: Check if two arrays are equal
+- `eqObjects(...)`: Check if two objects are equal
+- `countOnly(...)`: count how many times a key has appeared and which key user want to search
+- `findkeyByValue(...)`: Return a key that match the value of user input
+- `LetterPositions(...)`: Return of an array of postions of the letter you want to search

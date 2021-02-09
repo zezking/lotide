@@ -1,12 +1,13 @@
 const flatten = function (arr) {
   let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (Array.isArray(arr[i])) {
-      newArr.push(...flatten(arr[i]));
+  for (i of arr) {
+    if (Array.isArray(i)) {
+      newArr.push(...flatten(i));
     } else {
-      newArr.push(arr[i]);
+      newArr.push(i);
     }
   }
   return newArr;
 };
+console.log(flatten([1, 2, [3, 4], 5, [6]]));
 module.exports = flatten;
