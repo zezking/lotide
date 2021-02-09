@@ -1,6 +1,6 @@
 {
   "name": "@zezking/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is mini lodash library for LighthouseLabs Bootcamp",
   "main": "assertArraysEqual.js",
   "directories": {

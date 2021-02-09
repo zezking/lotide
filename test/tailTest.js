@@ -14,3 +14,5 @@ assertArraysEqual(tail(["Hello", "This", "Group", "is", "awesome"]), [
   "Hello",
   "Lighthouse",
 ]);
+
+
