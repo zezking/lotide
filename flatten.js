@@ -9,5 +9,4 @@ const flatten = function (arr) {
   }
   return newArr;
 };
-
 module.exports = flatten;
